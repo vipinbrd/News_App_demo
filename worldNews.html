@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World News</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: space-evenly;
+        border:1px solid green;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      #navbar :nth-child(2){
+        width:50%;
+        display:flex;
+        justify-content: space-evenly;
+      }
+      #sidebar{
+        border:1px solid black;
+        width:30%;
+        
+     
+      }
+      #sidebar img{
+        width:100%;
+      }
+      #news_result{
+        border:1px solid blue;
+        margin-left: 15px;
+  
+      }
+      #bar{
+        display: flex;
+
+      }
+      .news{
+        width:90%;
+      }
+      .news img{
+        width:100%;
+      }
+      h5{
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+<div>
+      <input id="search_box" type="text" placeholder="search news"/>
+</div>
+<div>
+
+      <h5 onclick="myfunc(id)" id="in">India</h5>
+      <h5 onclick="myfunc(id)"id="us">USA</h5>
+      <h5 onclick="myfunc(id)"id="ch">China</h5>
+      <h5 onclick="myfunc(id)"id="uk">UK</h5>
+      <h5 onclick="myfunc(id)"id="in">NewZealand</h5>
+      <h5 onclick="myfunc(id)"id="in">India</h5>
+      <!-- - The nav-bar will have following :- 
+     * search box with Id as- "search_box"
+     * Link for different country news with IDs as:-
+       - India :- “in”
+       - Usa :- “us”
+       - China :- “ch”
+       - UK :- “uk”
+       - New Zealand :- “nz” -->
+      </div>
+    </div>
+    <div id="bar">
+      <div id="sidebar">
+        <!-- Sidebar will have
+         - Image of user (Id:- "user_img")
+  - Name of user (Id:- "user_name")
+  - Email of user (Id:- "user_email")
+  - Country of user (Id:- "user_country) -->
+      </div>
+      <div id="news_result">
+        <!-- - All the news will be appended inside div with id as "news_result".
+ - Every news card will have class as "news" (Show image, title and author only in cards). -->
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/worldNews.js">
+
+
+</script>
+
